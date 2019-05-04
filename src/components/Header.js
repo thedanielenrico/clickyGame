@@ -6,7 +6,7 @@ const Header = (props) => {
         <nav>
             <div>
                 <ul>
-                    <li >
+                    <li>
                        Game of Thrones Clicky Game
                     </li>
                     <li>
@@ -18,10 +18,10 @@ const Header = (props) => {
                 </ul>
             </div>
         </nav>
-        <header className="text-center" >
+        {/* <header className="text-center" >
             <h3 className="">Clicky Game</h3>
             <h6 className="">Click on a image to add points, but don't click it again or you will lose points!</h6>
-        </header>
+        </header> */}
 
     </>
 }

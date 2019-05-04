@@ -2,7 +2,12 @@ ul {
 display: flex;
 justify-content: center;
 list-style-type: none;
+margin: 0px;
+padding: 0px;
 }
 li {
 margin: 20px;
+}
+nav {
+    margin: 0px;
 }
