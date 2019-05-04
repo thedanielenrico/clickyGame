@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "//github.com/thedanielenrico/clickyGame/static/css/main.8cc236f9.chunk.css",
+    "main.js": "//github.com/thedanielenrico/clickyGame/static/js/main.8922dace.chunk.js",
+    "main.js.map": "//github.com/thedanielenrico/clickyGame/static/js/main.8922dace.chunk.js.map",
+    "runtime~main.js": "//github.com/thedanielenrico/clickyGame/static/js/runtime~main.014abdbf.js",
+    "runtime~main.js.map": "//github.com/thedanielenrico/clickyGame/static/js/runtime~main.014abdbf.js.map",
+    "static/js/2.6408f43b.chunk.js": "//github.com/thedanielenrico/clickyGame/static/js/2.6408f43b.chunk.js",
+    "static/js/2.6408f43b.chunk.js.map": "//github.com/thedanielenrico/clickyGame/static/js/2.6408f43b.chunk.js.map",
+    "index.html": "//github.com/thedanielenrico/clickyGame/index.html",
+    "precache-manifest.4750751475e89edf560aff29d65cf298.js": "//github.com/thedanielenrico/clickyGame/precache-manifest.4750751475e89edf560aff29d65cf298.js",
+    "service-worker.js": "//github.com/thedanielenrico/clickyGame/service-worker.js",
+    "static/css/main.8cc236f9.chunk.css.map": "//github.com/thedanielenrico/clickyGame/static/css/main.8cc236f9.chunk.css.map"
+  }
+}
