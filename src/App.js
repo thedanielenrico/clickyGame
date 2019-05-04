@@ -16,7 +16,7 @@ class App extends React.Component {
 
     this.setState({
       score: this.state.score + 1,
-      message: "You guessed correctly",
+      message: "You guessed correctly!",
       highScore: this.state.score + 1 > this.state.highScore ? this.state.score + 1 : this.state.highScore
     })
 
@@ -24,7 +24,7 @@ class App extends React.Component {
 
   }
   resetScore = () => {
-    this.setState({score: 0, message: "You guessed incorrectly "})
+    this.setState({score: 0, message: "You guessed incorrectly!"})
 
   }
 
