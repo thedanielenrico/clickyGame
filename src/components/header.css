@@ -4,10 +4,22 @@ justify-content: center;
 list-style-type: none;
 margin: 0px;
 padding: 0px;
+height: 78px;
+
 }
 li {
 margin: 20px;
 }
 nav {
     margin: 0px;
+    background-color: lightgray;
+    font-family: 'Philosopher', sans-serif;
+}
+header{
+    margin: 0px;
+    background-image: url("/utils/images/got.png");
+    background-repeat: no-repeat;
+    height: 200px;
+    background-position: center;
+    background-color: black;
 }

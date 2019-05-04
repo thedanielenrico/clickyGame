@@ -6,22 +6,19 @@ const Header = (props) => {
         <nav>
             <div>
                 <ul>
-                    <li>
-                       Game of Thrones Clicky Game
+                    <li className="h4">
+                        Game of Thrones Clicky Game
                     </li>
-                    <li>
+                    <li className="h4">
                         <span>{props.message}</span>
                     </li>
-                    <li >
+                    <li className="h4">
                         Score: <span>{props.score}</span> | Top Score: <span>{props.highScore}</span>
                     </li>
                 </ul>
             </div>
         </nav>
-        {/* <header className="text-center" >
-            <h3 className="">Clicky Game</h3>
-            <h6 className="">Click on a image to add points, but don't click it again or you will lose points!</h6>
-        </header> */}
+        <header></header>
 
     </>
 }
