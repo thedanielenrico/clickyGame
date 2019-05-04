@@ -1,55 +1,26 @@
 import React from "react";
 import ImageCard from "./ImageCard";
 import ImageArray from "../ImageArray";
-
+import "./cardGrid.css"
 
 class Main extends React.Component {
     state = {
         clicked: false,
         clickedImgages: [],
-        ImageArray: []
+        imageArray: ImageArray
     };
 
-componentDidMount(){
-    this.setState({ImageArray: ImageArray})
-}
 
-  // Shuffle algo
-  shuffle = (array) => {
-    var currentIndex = array.length, temporaryValue, randomIndex;
-  
-    // While there remain elements to shuffle...
-    while (0 !== currentIndex) {
-  
-      // Pick a remaining element...
-      randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex -= 1;
-  
-      // And swap it with the current element.
-      temporaryValue = array[currentIndex];
-      array[currentIndex] = array[randomIndex];
-      array[randomIndex] = temporaryValue;
-    }
-  
-    return array;
-  }
     // Handle Clicked image and then push to array or say you've already clicked
     clickedImg = (id) => {
-        const newSate = this.state;
+        this.setState({imageArray: this.state.imageArray.sort(() => Math.random() - 0.5)});
 
         if (this.state.clickedImgages.includes(id)) {
             this.props.resetScore();
-            // console.log("you clicked already")
+            this.setState({clickedImgages: []});
         } else {
-            newSate.clickedImgages.push(id);
+            this.setState({clickedImgages: [...this.state.clickedImgages, id]})
             this.props.increaseScore();
-
-            this.setState({ clicked: true, clickedImgages: newSate.clickedImgages },
-                () => {
-
-                    console.log(this.state.clicked)
-                }
-            )
         }
     }
     render() {
@@ -58,7 +29,8 @@ componentDidMount(){
         return <>
             <div className="container">
 
-                <ImageCard ImageArray={this.state.ImageArray} handleClick={this.clickedImg} />
+                {this.state.imageArray.map(img => <ImageCard handleClick={() => this.clickedImg(img.id)} key={img.id} image={img.url}/>)}
+                {/* <ImageCard ImageArray={this.state.ImageArray} handleClick={this.clickedImg} /> */}
             </div>
         </>
     }
