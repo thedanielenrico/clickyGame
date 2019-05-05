@@ -9,7 +9,7 @@ const ImageCard = (props) => {
             onClick={() => props.handleClick() }
 
             style={{
-                width: "25%",
+                width: "20%",
                 cursor: "pointer",
                 background: `url(${props.image})`,
                 height: "200px",

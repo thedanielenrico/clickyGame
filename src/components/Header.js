@@ -8,7 +8,7 @@ const Header = (props) => {
                 <ul>
                     <li className="h4">
                         Game of Thrones Clicky Game
-                    </li>
+                             </li>
                     <li className="h4">
                         <span>{props.message}</span>
                     </li>
@@ -18,8 +18,11 @@ const Header = (props) => {
                 </ul>
             </div>
         </nav>
-        <header></header>
-
+        <header>
+            <p>
+                Click an image once to add a point, click the same image and lose.
+                    </p>
+        </header>
     </>
 }
 
