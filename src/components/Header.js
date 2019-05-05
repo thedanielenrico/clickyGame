@@ -3,7 +3,7 @@ import "./header.css";
 
 const Header = (props) => {
     return <>
-        <nav>
+        <nav className="fixed-top">
             <div>
                 <ul>
                     <li className="h4">
